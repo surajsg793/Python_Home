@@ -1,3 +1,151 @@
+Certainly! Below is a list of commonly used Git commands along with descriptions of what each command does. Git is a distributed version control system used for tracking changes in code repositories.
+
+### Configuration Commands:
+
+1. **git config**: Used for setting up and configuring Git settings.
+   - `git config --global user.name "Your Name"`: Sets your name for all repositories.
+   - `git config --global user.email "youremail@example.com"`: Sets your email for all repositories.
+   - `git config --list`: Lists all Git configurations.
+
+### Repository Initialization:
+
+2. **git init**: Initializes a new Git repository in the current directory.
+
+### Cloning:
+
+3. **git clone**: Copies a remote repository to your local machine.
+   - `git clone <repository_url>`: Clones a remote repository.
+
+### Basic Workflow:
+
+4. **git add**: Adds changes to the staging area.
+   - `git add <file>`: Stages a specific file.
+   - `git add .` or `git add -A`: Stages all changes.
+
+5. **git status**: Shows the status of files in the working directory.
+
+6. **git commit**: Records staged changes to the repository.
+   - `git commit -m "Commit message"`: Commits staged changes with a message.
+
+### Branching and Merging:
+
+7. **git branch**: Lists branches and shows the current branch.
+   - `git branch <branch_name>`: Creates a new branch.
+   - `git branch -d <branch_name>`: Deletes a branch.
+
+8. **git checkout**: Switches between branches or commits.
+   - `git checkout <branch_name>`: Switches to an existing branch.
+   - `git checkout -b <new_branch>`: Creates and switches to a new branch.
+   - `git checkout <commit_hash>`: Checks out a specific commit.
+
+9. **git merge**: Merges changes from one branch into another.
+   - `git merge <branch_name>`: Merges changes from the specified branch into the current branch.
+
+10. **git stash**: Temporarily saves changes without committing.
+    - `git stash save "Description"`: Stashes changes with a description.
+    - `git stash list`: Lists all stashes.
+    - `git stash apply`: Applies the most recent stash.
+    - `git stash pop`: Applies and removes the most recent stash.
+
+### Remote Repositories:
+
+11. **git remote**: Lists remote repositories.
+    - `git remote add <name> <repository_url>`: Adds a remote repository.
+    - `git remote -v`: Lists remote repositories with URLs.
+
+12. **git push**: Pushes local commits to a remote repository.
+    - `git push <remote_name> <branch_name>`: Pushes a branch to a remote repository.
+
+13. **git pull**: Fetches and merges changes from a remote repository.
+
+### History and Logs:
+
+14. **git log**: Shows commit history.
+    - `git log --oneline`: Displays compact commit history.
+    - `git log --graph`: Displays a commit graph.
+
+15. **git diff**: Shows differences between commits, branches, or files.
+    - `git diff <source> <destination>`: Compares two branches or commits.
+    - `git diff <file>`: Compares the working directory file with the last committed version.
+
+16. **git blame**: Shows who made changes to each line in a file.
+
+### Reverting and Resetting:
+
+17. **git reset**: Resets the current HEAD to a specific state.
+    - `git reset <commit>`: Moves HEAD to the specified commit.
+
+18. **git revert**: Creates a new commit that undoes changes made in a previous commit.
+    - `git revert <commit>`: Reverts the changes from a specific commit.
+
+### Miscellaneous:
+
+19. **git tag**: Creates, lists, or verifies tags.
+    - `git tag <tag_name>`: Creates a lightweight tag.
+    - `git tag -a <tag_name> -m "Message"`: Creates an annotated tag with a message.
+
+20. **git blame**: Shows who made changes to each line in a file.
+
+21. **gitignore**: A file that specifies files or directories to be ignored by Git.
+
+These are some of the most commonly used Git commands. Git offers many more commands and options for managing version control, collaborating with others, and tracking changes in your codebase. Use `git --help` or `git <command> --help` for more information on specific commands.
+
+Certainly! Here are some additional Git commands and their descriptions:
+
+### Working with Remotes:
+
+22. **git fetch**: Downloads objects and refs from another repository.
+    - `git fetch <remote_name>`: Fetches changes from a remote repository.
+
+23. **git remote update**: Updates remote-tracking branches.
+
+24. **git remote remove**: Removes a remote repository.
+    - `git remote remove <remote_name>`: Removes a remote repository from the list of remotes.
+
+25. **git remote rename**: Renames a remote repository.
+    - `git remote rename <old_name> <new_name>`: Renames a remote repository.
+
+### Rebasing and Cherry-Picking:
+
+26. **git rebase**: Reapplies commits on top of another base tip.
+    - `git rebase <branch_name>`: Reapplies commits from the current branch on top of another branch.
+
+27. **git cherry-pick**: Applies specific commits from one branch to another.
+    - `git cherry-pick <commit>`: Applies the changes introduced by a specific commit to the current branch.
+
+### Git Interactive Mode:
+
+28. **git add -i**: Opens Git's interactive mode for selective staging and un-staging of changes.
+
+### Submodules:
+
+29. **git submodule**: Manages Git submodules within a repository.
+    - `git submodule add <repository_url> <path>`: Adds a new submodule.
+    - `git submodule update --init --recursive`: Initializes and updates submodules.
+
+### Git Configurations:
+
+30. **gitignore Global**: Specifies global `.gitignore` file.
+    - `git config --global core.excludesfile ~/.gitignore_global`: Sets up a global `.gitignore` file.
+
+### Git Hooks:
+
+31. **Git Hooks**: Scripts that can be executed at certain points in Git workflow.
+    - Hooks are located in the `.git/hooks` directory of a Git repository.
+
+### Advanced Operations:
+
+32. **git bisect**: Helps find a specific commit responsible for a bug using binary search.
+
+33. **git reflog**: Shows a log of reference changes in the repository.
+
+34. **git blame**: Shows who made changes to each line in a file.
+
+35. **git archive**: Creates a compressed archive of a specified branch or commit.
+
+These additional Git commands provide advanced functionality for managing complex version control scenarios and optimizing your development workflow. Be sure to refer to the official Git documentation or use `git --help` for detailed information on each command and its options.
+
+
 
 गिट कमान्डश
 ============
