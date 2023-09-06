@@ -114,10 +114,19 @@
 # Local()
 # print(x)
 
-x = 20
-def Abc() :
-    global x
-    x = 11
-    print(x)
-Abc()
-print(x)
+# x = 20
+# def Abc() :
+#     global x
+#     x = 11
+#     # print(x)
+# Abc()
+# print(x)
+
+def Abc(x) :
+     print(x)
+
+Person = {
+    "Name" : "Rajesh",
+    "Age" : 32, 
+    "Group" : "B"
+}
