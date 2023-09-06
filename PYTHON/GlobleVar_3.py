@@ -70,14 +70,54 @@
 # Understanding variable scope is crucial for writing maintainable and bug-free Python code. It helps you manage the visibility and lifetime of variables in your programs effectively.
 
 
-x = "Globle Variable"
-def myFunction_g():
-    print(x)
-myFunction_g()
+# x = "Globle Variable"
+# def myFunction_g():
+#     print(x)
+# myFunction_g()
 
-def myFunction_l():
-    x = "Local Variable"
-    print(x)
-myFunction_l()
+# def myFunction_l():
+#     x = "Local Variable"
+#     print(x)
+# myFunction_l()
 
+# print(x)
+
+# def Var():
+#     x = 10
+#     print(x)
+# Var()
+
+# def LocalVar() :
+#     x = 20
+#     def InnerVar() :
+#         print(x)
+#     InnerVar()
+# LocalVar()
+
+# x = 200
+
+# def GlobalVar() :
+#     print(x)
+# GlobalVar()
+
+# x = 2
+# def Two() :
+#     x = 3
+#     print(x)
+# Two()
+# print(x)
+
+# def Local() : 
+#     global x
+#     x = 12
+#     # print(x)
+# Local()
+# print(x)
+
+x = 20
+def Abc() :
+    global x
+    x = 11
+    print(x)
+Abc()
 print(x)
