@@ -21,3 +21,6 @@
 print("Hello");
 # This signal line comment
 '''This is multiline comment'''
+
+username = input("Enter username:")
+print("Username is: " + username)

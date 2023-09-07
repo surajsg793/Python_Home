@@ -156,3 +156,11 @@
 
 # d = "Realme {2}, {0}, {1} is new series mobile."
 # print(d.format(c1, c2, c3))
+
+# import camelcase
+
+# c = camelcase.CamelCase()
+
+# txt = "lorem ipsum dolor sit amet"
+
+# print(c.hump(txt))
