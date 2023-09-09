@@ -1,7 +1,7 @@
 import qrcode
 
 # Define the data you want to encode in the QR code
-data = "Hello, World!"
+data = "https://github.com/surajsg793/Python_Home/blob/main/PROJECT/QRCode.py"
 
 # Create a QR code instance
 qr = qrcode.QRCode(
