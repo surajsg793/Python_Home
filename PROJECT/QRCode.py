@@ -38,5 +38,3 @@ img.save("GitHub_Project.png")
 
 # Display the QR code (optional)
 img.show()
-
-
