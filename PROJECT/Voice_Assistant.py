@@ -1,11 +1,13 @@
 import pyttsx3
 import speech_recognition as sr
-# import webbrowser
+import webbrowser
 import datetime
 import pyjokes
 import os
 import openai
 import time
+import playsound
+
 
 
 def sptext():
@@ -21,15 +23,15 @@ def sptext():
             return data
         except sr.UnknownValueError :
             print("Not recognizing.")
-def speechtx():
+def speechtx(x):
     engine = pyttsx3.init()
     voices = engine.getProperty('voices')
-    engine.setProperty('voice',voices[1].id)
+    engine.setProperty('voice',voices[0].id)
     rate = engine.getProperty('rate')
     engine.setProperty('rate', 175)
     engine.say(x)
     engine.runAndWait()
-speechtx()
+speechtx("Hello, Soni")
 
 if __name__=='__main__':
     if sptext().lower() == "Hey, Peter" :
@@ -56,13 +58,13 @@ if __name__=='__main__':
                     Joke_1 = pyjokes.get_joke(language="en",category="netrual")
                     print(Joke_1)
                     speechtx(Joke_1)
-                # elif "Play Song" in data1 :
-                #     addr= "Location play list"
-                #     listsong = os.listdir(addr)
-                #     print(listsong)
-                #     os.startfile(os.path.join(addr,listsong[0]))
-                    # song = playsound.play("PlayListLocation")
-                    # speechtx(song)
+                elif "Play Song" in data1 :
+                    addr= "Location play list"
+                    listsong = os.listdir(addr)
+                    print(listsong)
+                    os.startfile(os.path.join(addr,listsong[0]))
+                    song = playsound.play("PlayListLocation")
+                    speechtx(song)
                 elif "exit" in data1:
                     speechtx("Thank you !")
                     break
